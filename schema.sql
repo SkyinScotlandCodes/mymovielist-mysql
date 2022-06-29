@@ -61,3 +61,4 @@ CREATE TABLE movie_genre (
 );
 
 SELECT * FROM movie_genre;
+
