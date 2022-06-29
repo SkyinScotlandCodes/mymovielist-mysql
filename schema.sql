@@ -22,8 +22,8 @@ SELECT * FROM movies;
 
 CREATE TABLE directors (
 	director_id INT NOT NULL AUTO_INCREMENT,
-    director_name VARCHAR(50) NOT NULL,
-    PRIMARY KEY (director_id)
+	director_name VARCHAR(50) NOT NULL,
+	PRIMARY KEY (director_id)
 );
 
 SELECT * FROM directors;
@@ -32,8 +32,8 @@ SELECT * FROM directors;
 
 CREATE TABLE genres (
 	genre_id INT NOT NULL AUTO_INCREMENT,
-    genre VARCHAR(50) NOT NULL,
-    PRIMARY KEY (genre_id)
+	genre VARCHAR(50) NOT NULL,
+	PRIMARY KEY (genre_id)
 );
 
 SELECT * FROM genres;
