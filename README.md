@@ -1,4 +1,4 @@
-# mymovielist-mysql
+# mymovielist-mysql course project
 MySQL relational database for personal querying using exported csv from IMDb for a 8 week course run by Code First Girls
 
 Exported my Watchlist (towards the bottom of the Watchlist) page there is the link "Export this list". Clicking on this link creates a Comma Separated Variable (CSV) formatted file. This file contains these columns of data:
