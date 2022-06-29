@@ -42,10 +42,10 @@ SELECT * FROM genres;
 
 CREATE TABLE movie_director (
 	movie_id INT NOT NULL,
-    director_id INT NOT NULL,
-    CONSTRAINT pk_movie_director PRIMARY KEY (director_id, movie_id),
-    CONSTRAINT fk_movie_director_id FOREIGN KEY (director_id) REFERENCES directors (director_id),
-    CONSTRAINT fk_movie_movie_id FOREIGN KEY (movie_id) REFERENCES movies (movie_id)
+	director_id INT NOT NULL,
+	CONSTRAINT pk_movie_director PRIMARY KEY (director_id, movie_id),
+	CONSTRAINT fk_movie_director_id FOREIGN KEY (director_id) REFERENCES directors (director_id),
+	CONSTRAINT fk_movie_movie_id FOREIGN KEY (movie_id) REFERENCES movies (movie_id)
 );
 
 SELECT * FROM movie_director;
@@ -54,10 +54,10 @@ SELECT * FROM movie_director;
 
 CREATE TABLE movie_genre (
 	movie_id INT NOT NULL,
-    genre_id INT NOT NULL,
-    CONSTRAINT pk_movie_genre PRIMARY KEY (genre_id, movie_id),
-    CONSTRAINT fk_movie_genre_genre_id FOREIGN KEY (genre_id) REFERENCES genres (genre_id),
-    CONSTRAINT fk_movie_genre_movie_id FOREIGN KEY (movie_id) REFERENCES movies (movie_id)
+	genre_id INT NOT NULL,
+	CONSTRAINT pk_movie_genre PRIMARY KEY (genre_id, movie_id),
+	CONSTRAINT fk_movie_genre_genre_id FOREIGN KEY (genre_id) REFERENCES genres (genre_id),
+	CONSTRAINT fk_movie_genre_movie_id FOREIGN KEY (movie_id) REFERENCES movies (movie_id)
 );
 
 SELECT * FROM movie_genre;
