@@ -8,12 +8,12 @@ USE MyMovieList;
 
 CREATE TABLE movies (
 	movie_id INT NOT NULL AUTO_INCREMENT,
-   	movie_title VARCHAR(250) NOT NULL,
-    release_year VARCHAR(4),
-   	runtime_minutes SMALLINT NOT NULL, 
-    date_added DATE NOT NULL,
-    my_rating TINYINT NOT NULL,
-    PRIMARY KEY (movie_id)
+	movie_title VARCHAR(250) NOT NULL,
+	release_year VARCHAR(4),
+	runtime_minutes SMALLINT NOT NULL, 
+	date_added DATE NOT NULL,
+	my_rating TINYINT NOT NULL,
+	PRIMARY KEY (movie_id)
 );
 
 SELECT * FROM movies;
